@@ -1,0 +1,19 @@
+import math
+
+def calcular_circunferencia(radio):
+    # Calcula la circunferencia usando la fórmula C = 2 * π * r
+    circunferencia = 2 * math.pi * radio
+    return circunferencia
+
+def main():
+    # Solicita al usuario el valor del radio
+    radio = float(input("Ingrese el valor del radio: "))
+
+    # Calcula la circunferencia
+    circunferencia = calcular_circunferencia(radio)
+
+    # Imprime el resultado
+    print(f"La circunferencia para un radio de {radio} es: {circunferencia:.6f}")
+
+if __name__ == "__main__":
+    main()
